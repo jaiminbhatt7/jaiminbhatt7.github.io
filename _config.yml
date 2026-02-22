@@ -14,6 +14,9 @@ url: "https://jaiminbhatt7.github.io"
 # Theme
 remote_theme: JustGoodThemes/Scriptor-Jekyll-Theme
 
+# Favicon
+favicon: /assets/images/favicon.png
+
 # Accent color
 accent_color: '#2d72d9'
 
