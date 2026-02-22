@@ -4,7 +4,7 @@ date: 2025-05-17 00:01:28 -0700
 tags:
   - travel
   - nature
-feature_image: /assets/images/placeholder.svg
+feature_image: /assets/images/banff-moraine-lake.jpg
 excerpt: "RefrainPlain is a space for slow travel, wild landscapes, and the quiet art of paying attention — where every journey becomes a story worth telling."
 ---
 
