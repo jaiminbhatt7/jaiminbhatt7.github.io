@@ -5,9 +5,9 @@ permalink: /about/
 author_profile: true
 ---
 
-## Hello, I'm [Your Name]
+## Hello, I'm Jaimin
 
-I'm a writer, traveller, and amateur photographer based in [Your City, Country]. I spend as much time as I can outdoors — on foot, in the mountains, along coastlines, or wherever a long drive leads me on a free weekend.
+I'm a writer, traveller, and amateur photographer based in Seattle. I spend as much time as I can outdoors — on foot, in the mountains, along coastlines, or wherever a long drive leads me on a free weekend.
 
 RefrainPlain started as a personal notebook and eventually became a blog. The name reflects the way landscapes repeat themselves in memory: the same ridge silhouette at dusk, the same bend in a river, the same stillness before a storm breaks. Paying attention to those repetitions is how I travel.
 
