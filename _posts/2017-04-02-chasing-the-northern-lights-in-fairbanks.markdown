@@ -30,6 +30,8 @@ I wore three layers of thermal gear, a face mask, wool socks, hiking boots, and 
 
 The aurora typically first appears as a faint white band stretched quietly across the sky. Here's the remarkable part: point your camera at that pale smear and take a shot — it comes up vivid green on your display. On a good night you can see that green with the naked eye, and if you're lucky, you'll watch the lights dance across the entire sky in sweeping ribbons of white, green, and red. We got that lucky.
 
+![Northern lights dancing over Fairbanks](/assets/images/alaska-aurora-2.jpg)
+
 ## Equipment
 
 - A DSLR camera
@@ -50,3 +52,15 @@ Set your camera to shoot in RAW format so you have full flexibility to edit late
 Focusing is the trickiest part of the whole process. Autofocus fails in near-darkness almost every time. Set your focus to infinity manually while there's still daylight — I learned this the hard way, wasting precious shooting time fumbling with focus dials at -20°C in ski gloves.
 
 I'll skip the post-processing section — I don't have the expertise, and I prefer the images straight out of the camera anyway. More high-quality images and full EXIF data are on my Flickr.
+
+## More from Alaska
+
+The northern lights were the headline, but Alaska had no shortage of other moments worth stopping for.
+
+![Orca pod off the Kenai coast](/assets/images/alaska-orcas.jpg)
+
+![Whale fluke diving off Kenai Fjords](/assets/images/alaska-whale-tail.jpg)
+
+![Kenai Fjords glacier cruise](/assets/images/alaska-kenai-fjords.jpg)
+
+![Caribou grazing on the tundra](/assets/images/alaska-caribou.jpg)
