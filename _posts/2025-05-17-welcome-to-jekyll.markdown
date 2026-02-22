@@ -1,9 +1,13 @@
 ---
-layout: post
 title: "Welcome to RefrainPlain"
 date: 2025-05-17 00:01:28 -0700
-categories: travel nature
-cover_image: /assets/images/placeholder.svg
+categories:
+  - travel
+  - nature
+header:
+  overlay_image: /assets/images/placeholder.svg
+  overlay_filter: 0.35
+  teaser: /assets/images/placeholder.svg
 excerpt: "RefrainPlain is a space for slow travel, wild landscapes, and the quiet art of paying attention — where every journey becomes a story worth telling."
 ---
 
