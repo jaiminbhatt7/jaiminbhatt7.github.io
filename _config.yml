@@ -6,54 +6,40 @@ description: >-
   A blog dedicated to nature lovers, travel enthusiasts, and photography fans.
   Explore breathtaking journeys, stunning landscapes, and tips to capture the
   beauty of our world.
+lang: en-US
 baseurl: ""
 domain: "jaiminbhatt7.github.io"
 url: "https://jaiminbhatt7.github.io"
-locale: "en-US"
 
 # Theme
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air"
+remote_theme: JustGoodThemes/Scriptor-Jekyll-Theme
 
-# Author
-author:
-  name: "Jaimin"
-  bio: "Writer, traveller, and amateur photographer exploring nature one step at a time."
-  location: "Seattle"
-  email: refrain_plain@jaiminbhatt.com
-  links:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/refrain_plain/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/RefrainPlain"
-    - label: "YouTube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/@RefrainPlain"
+# Accent color
+accent_color: '#2d72d9'
 
-# Keep top-level social vars for about page Liquid conditionals
-twitter_username: RefrainPlain
-instagram_username: refrain_plain
-youtube_username: "@RefrainPlain"
+# Site navigation
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+
+# Footer
+footer:
+  content: "&copy; Jaimin. All rights reserved."
+  has_social: true
 
 # Pagination
 paginate: 10
 paginate_path: "/page:num/"
 
-# Excerpts
-show_excerpts: true
+# Permalink
+permalink: /:year/:month/:day/:title/
 
-# Files to include
-include:
-  - _pages
-
-# Build settings
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-include-cache
 
 # Defaults
 defaults:
@@ -61,14 +47,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: false
-      related: true
+      layout: post
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: page
