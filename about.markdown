@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
+<div style="text-align:center; margin-bottom:1.5rem;">
+  <img src="/assets/images/author.jpg" alt="Jaimin" style="width:160px; height:160px; border-radius:50%; object-fit:cover;">
+</div>
+
 ## Hello, I'm Jaimin
 
 I'm a writer, traveller, and amateur photographer based in Seattle. I spend as much time as I can outdoors — on foot, in the mountains, along coastlines, or wherever a long drive leads me on a free weekend.
