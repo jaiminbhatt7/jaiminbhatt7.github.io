@@ -1,5 +1,5 @@
 ---
-title: "Chasing the Northern Lights in Fairbanks"
+title: "Alaska in Winter: Northern Lights, Whales &amp; Wildlife"
 date: 2017-04-02 00:00:00 -0700
 tags:
   - northern lights
@@ -7,8 +7,8 @@ tags:
   - fairbanks
   - alaska
   - aurora borealis
-feature_image: /assets/images/fairbanks-aurora.jpg
-excerpt: "In March 2017, I traveled to Fairbanks, Alaska to chase the Aurora Borealis with a camera and very little idea what I was doing. Here's everything I wish I'd known before going."
+feature_image: /assets/images/alaska-collage.jpg
+excerpt: "In March 2017, we drove through open tundra, watched orcas off the Kenai coast, cruised past glaciers, and spent freezing nights at Murphy Dome chasing the northern lights. A week in Alaska in winter."
 ---
 
 I'm a beginner photographer with a passion for long-exposure night photography. In March 2017, we traveled to Fairbanks, Alaska to chase the northern lights — the Aurora Borealis — and I wanted to share what I learned along the way.
