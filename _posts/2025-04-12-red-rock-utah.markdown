@@ -1,6 +1,6 @@
 ---
 title: "Red Rock Utah: Arches and Canyonlands"
-date: 2026-02-22 00:00:00 -0700
+date: 2025-04-12 00:00:00 -0700
 tags:
   - utah
   - arches
