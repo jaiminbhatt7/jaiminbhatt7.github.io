@@ -1,0 +1,270 @@
+---
+---
+
+@import "minima";
+
+// ─── Hero ────────────────────────────────────────────────────────────────────
+
+.hero {
+  text-align: center;
+  padding: $spacing-unit * 2 $spacing-unit;
+  border-bottom: 1px solid $grey-color-light;
+  margin-bottom: $spacing-unit;
+
+  .hero__title {
+    font-size: 2.4em;
+    margin-bottom: $spacing-unit / 4;
+
+    @include media-query($on-palm) {
+      font-size: 1.8em;
+    }
+  }
+
+  .hero__tagline {
+    font-size: 1.1em;
+    color: $grey-color;
+    margin: 0;
+
+    @include media-query($on-palm) {
+      font-size: 1em;
+    }
+  }
+}
+
+// ─── Post list ───────────────────────────────────────────────────────────────
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: $spacing-unit;
+  padding: $spacing-unit 0;
+  border-bottom: 1px solid $grey-color-light;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+    gap: $spacing-unit / 2;
+  }
+}
+
+.post-item__thumb-link {
+  flex-shrink: 0;
+}
+
+.post-item__thumb {
+  display: block;
+  width: 180px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 3px;
+  transition: opacity 0.2s ease;
+
+  @include media-query($on-palm) {
+    width: 100%;
+    height: 180px;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.post-item__thumb--placeholder {
+  background-color: $grey-color-light;
+}
+
+.post-item__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-item__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-unit / 4;
+  margin-bottom: $spacing-unit / 4;
+}
+
+.post-item__date {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-item__title {
+  font-size: 1.25em;
+  margin: 0 0 ($spacing-unit / 4);
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}
+
+.post-item__excerpt {
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin: 0;
+}
+
+// ─── Category badge ──────────────────────────────────────────────────────────
+
+.post-category {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background-color: $grey-color-light;
+  color: $grey-color;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+// ─── Post cover image ────────────────────────────────────────────────────────
+
+.post-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 52.5%; // 630/1200 aspect ratio
+  overflow: hidden;
+  margin-bottom: $spacing-unit;
+  background-color: $grey-color-light;
+
+  .post-cover__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// ─── Post header ─────────────────────────────────────────────────────────────
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-unit / 4;
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+// ─── Pagination ──────────────────────────────────────────────────────────────
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-unit / 2;
+  padding: $spacing-unit 0;
+  border-top: 1px solid $grey-color-light;
+  margin-top: $spacing-unit;
+
+  .pagination__btn {
+    display: inline-block;
+    padding: ($spacing-unit / 4) ($spacing-unit / 2);
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    font-size: $small-font-size;
+    color: $brand-color;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $grey-color-light;
+    }
+  }
+
+  .pagination__btn--disabled {
+    color: $grey-color-light;
+    cursor: default;
+    border-color: lighten($grey-color-light, 5%);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .pagination__info {
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+}
+
+// ─── Post navigation (prev/next) ─────────────────────────────────────────────
+
+.post-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: $spacing-unit;
+  padding: $spacing-unit 0;
+  border-top: 1px solid $grey-color-light;
+  margin-top: $spacing-unit * 1.5;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
+
+  .post-navigation__prev,
+  .post-navigation__next {
+    display: flex;
+    flex-direction: column;
+    max-width: 48%;
+
+    @include media-query($on-palm) {
+      max-width: 100%;
+    }
+
+    a {
+      font-size: 0.95em;
+      color: $brand-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .post-navigation__next {
+    text-align: right;
+    margin-left: auto;
+
+    @include media-query($on-palm) {
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+
+  .post-navigation__label {
+    font-size: $small-font-size;
+    color: $grey-color;
+    margin-bottom: 2px;
+  }
+}
+
+// ─── RSS subscribe link ───────────────────────────────────────────────────────
+
+.rss-subscribe {
+  font-size: $small-font-size;
+  color: $grey-color;
+  margin-top: $spacing-unit;
+}

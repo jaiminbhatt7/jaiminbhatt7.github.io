@@ -1,29 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2025-05-17 00:01:28 -0700
-categories: jekyll update
+title: "Welcome to RefrainPlain"
+date: 2025-05-17 00:01:28 -0700
+categories: travel nature
+cover_image: /assets/images/placeholder.svg
+excerpt: "RefrainPlain is a space for slow travel, wild landscapes, and the quiet art of paying attention — where every journey becomes a story worth telling."
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+There is a particular kind of stillness you find only when you are far from where you started. Not silence exactly — the mountains are never truly silent — but a quality of attention that sharpens when familiar noise falls away. That feeling is what RefrainPlain is about.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+This blog grew out of years of wandering: early mornings on high ridgelines, afternoons lost in coastal towns, evenings watching light dissolve over plains I had no name for. I kept notes, kept photographs, kept trying to find the right words for things that resisted easy description. RefrainPlain is where those efforts finally have a home.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+The name comes from a small habit I picked up while hiking: the refrain — the repeated phrase in a song or poem — reminded me of the way landscapes echo themselves. A ridge silhouetted at dusk looks like the ridge you saw three valleys back. A river bends the same way rivers always bend. "Plain" in the sense of open, unadorned, unhurried. A plain way of seeing things as they are.
 
-Jekyll also offers powerful support for code snippets:
+You will find posts here about specific places — trails and coastlines, mountain huts and border towns — alongside essays about the practice of travel itself: how to slow down, how to look, how to come home changed. Photography is threaded through everything, because some moments ask to be held in an image before they can be held in words.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+I am glad you found this corner of the internet. Pull up a chair, browse the archive, and feel free to reach out if a post strikes a chord. The best journeys are the ones shared, even after the fact.

@@ -4,15 +4,37 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Hello, I'm [Your Name]
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm a writer, traveller, and amateur photographer based in [Your City, Country]. I spend as much time as I can outdoors — on foot, in the mountains, along coastlines, or wherever a long drive leads me on a free weekend.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+RefrainPlain started as a personal notebook and eventually became a blog. The name reflects the way landscapes repeat themselves in memory: the same ridge silhouette at dusk, the same bend in a river, the same stillness before a storm breaks. Paying attention to those repetitions is how I travel.
 
+## What you'll find here
 
-[jekyll-organization]: https://github.com/jekyll
+**RefrainPlain** is a blog about nature, travel, and photography. Posts range from trail reports and destination guides to longer essays about the practice of slow travel and the challenge of capturing a moment in an image. I am not interested in superlatives — the "most spectacular" or the "most remote." I am more interested in what it feels like to be somewhere specific, in a specific light, with a specific quality of attention.
+
+Photography appears in almost every post, shot on whatever I happened to have with me at the time. I am not a professional, and I do not pretend to be.
+
+## Get in touch
+
+The best way to reach me is by email:
+
+{% if site.email %}
+- **Email:** [{{ site.email }}](mailto:{{ site.email }})
+{% endif %}
+{% if site.instagram_username %}
+- **Instagram:** [@{{ site.instagram_username }}](https://www.instagram.com/{{ site.instagram_username }}/)
+{% endif %}
+{% if site.twitter_username %}
+- **Twitter / X:** [@{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})
+{% endif %}
+{% if site.youtube_username %}
+- **YouTube:** [{{ site.youtube_username }}](https://www.youtube.com/{{ site.youtube_username }})
+{% endif %}
+
+I read every message and try to reply to all of them, though it may take a few days.
+
+---
+
+*All photographs on this site are my own unless noted otherwise. If you would like to use an image, please get in touch first.*

@@ -31,10 +31,23 @@ instagram_username: refrain_plain
 youtube_username: "@RefrainPlain"
 # github_username:  jekyll
 
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Excerpts
+show_excerpts: true
+
+# Navigation
+header_pages:
+  - about.markdown
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
