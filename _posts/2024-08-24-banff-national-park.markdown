@@ -7,7 +7,7 @@ tags:
   - canadian rockies
   - national parks
   - landscape photography
-feature_image: /assets/images/banff-moraine-lake.jpg
+feature_image: /assets/images/banff-collage.jpg
 excerpt: "Glacial lakes in shades of turquoise that don't look real, peaks that rise straight out of the treeline without apology, and a kind of quiet that only exists where the mountains are large enough to absorb everything. Banff in August."
 ---
 
