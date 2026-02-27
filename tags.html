@@ -1,0 +1,25 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<main class="main-content fadeInDown delay_075s">
+  <div class="post">
+    <h1 class="post-title">Tags</h1>
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+      <h2 id="{{ tag[0] | cgi_escape }}">{{ tag[0] }}</h2>
+      <ul class="archive-post-list">
+        {% assign sorted_posts = tag[1] | sort: "date" | reverse %}
+        {% for post in sorted_posts %}
+          <li>
+            <span class="archive-meta"><span class="archive-date">{{ post.date | date: "%b %-d, %Y" }}</span></span>
+            &nbsp;&mdash;&nbsp;
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</main>
