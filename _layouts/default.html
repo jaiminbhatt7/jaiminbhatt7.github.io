@@ -13,6 +13,14 @@
   <!-- Styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
   <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/custom.css' | relative_url }}" rel="stylesheet">
+  <!-- Apply saved theme before render to prevent flash -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
 </head>
 <body>
 
@@ -24,12 +32,34 @@
     </div><!-- .inner -->
   </div><!-- .site -->
 
+  <button id="dark-mode-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">☾</button>
+
   <!-- Scripts -->
   {% if site.google_analytics %}
     {% include google_analytics.html %}
   {% endif %}
   <script src="{{ '/assets/js/plugins.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  <script>
+    (function() {
+      var btn = document.getElementById('dark-mode-toggle');
+      function isDark() {
+        var t = document.documentElement.getAttribute('data-theme');
+        if (t === 'dark') return true;
+        if (t === 'light') return false;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function updateIcon() { btn.textContent = isDark() ? '\u2600' : '\u263e'; }
+      updateIcon();
+      btn.addEventListener('click', function() {
+        var next = isDark() ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateIcon();
+      });
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateIcon);
+    })();
+  </script>
 
 </body>
 </html>

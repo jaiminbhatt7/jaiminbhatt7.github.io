@@ -1,0 +1,139 @@
+---
+---
+
+/* ==========================================
+   Dark Mode Toggle Button (light mode state)
+   ========================================== */
+#dark-mode-toggle {
+  background: transparent;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  bottom: 1.5rem;
+  box-sizing: border-box;
+  color: #6b747a;
+  cursor: pointer;
+  font-size: 17px;
+  height: 36px;
+  line-height: 1;
+  padding: 0 9px;
+  position: fixed;
+  right: 1.5rem;
+  transition: border-color .3s, color .3s;
+  z-index: 999;
+}
+
+#dark-mode-toggle:hover,
+#dark-mode-toggle:focus {
+  border-color: #2d72d9;
+  color: #2d72d9;
+  outline: 0;
+}
+
+/* ==========================================
+   Dark Mode Color Overrides
+   ========================================== */
+@mixin dark-mode {
+  body {
+    background-color: #16181f;
+    color: #c8d0da;
+  }
+
+  a { color: #6ba3de; }
+  a:hover { color: #90bfed; }
+
+  h1, h2, h3, h4, h5, h6 { color: #e2e8f2; }
+
+  mark, ins { background: #3a3000; color: #e2e8f2; }
+
+  pre {
+    background: #191c28;
+    border-color: #2c3346;
+  }
+
+  :not(pre) > code {
+    background: #191c28;
+    border-color: #2c3346;
+  }
+
+  blockquote {
+    border-left-color: #4a5568;
+    color: #c8d0da;
+  }
+  blockquote small, blockquote cite { color: #8896a5; }
+
+  hr { background: #2c3346; }
+
+  table { border-bottom-color: #2c3346; }
+  th, td { border-top-color: #2c3346; }
+  th { color: #e2e8f2; }
+  table tbody > tr:nth-child(odd) { background: #1a1d2a; }
+
+  ::-moz-selection { background: #1e3a6e; color: #e2e8f2; }
+  ::selection { background: #1e3a6e; color: #e2e8f2; }
+
+  #menu-open, #menu-close, .back-to-top {
+    border-color: #2c3346;
+    color: #8896a5;
+  }
+
+  #dark-mode-toggle {
+    border-color: #2c3346;
+    color: #8896a5;
+  }
+
+  .site-header { border-bottom-color: #2c3346; }
+
+  .site-title { color: #e2e8f2; }
+  .site-title a { color: #e2e8f2; }
+  .site-title a:hover { color: #6ba3de; }
+
+  .menu-item a { color: #8896a5; }
+  .menu-item a:hover { color: #6ba3de; }
+
+  .site-description { border-bottom-color: #2c3346; }
+
+  .site-navigation { background: #16181f; }
+  .menu-item { border-bottom-color: #2c3346; }
+
+  .post { border-bottom-color: #2c3346; }
+  .post-date { color: #8896a5; }
+  .post-title a { color: #e2e8f2; }
+  .post-title a:hover { color: #6ba3de; }
+
+  .author-box { border-top-color: #2c3346; }
+  .author-box .author-location,
+  .author-box .author-website { color: #8896a5; }
+
+  .post-share a { border-color: #2c3346; color: #8896a5; }
+  .post-share a:hover { border-color: #6ba3de; color: #6ba3de; }
+  .post-share span { color: #8896a5; }
+
+  .archive-top-link, .archive-meta { color: #8896a5; }
+  .image-card figcaption { color: #8896a5; }
+
+  .comments-area { border-bottom-color: #2c3346; }
+
+  .pagination { border-bottom-color: #2c3346; color: #c8d0da; }
+
+  .offsite-links a { color: #8896a5; }
+  .offsite-links a:hover { color: #6ba3de; }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] { background: #191c28; }
+  code[class*="language-"],
+  pre[class*="language-"] { color: #c8d0da; }
+}
+
+/* System preference: dark */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    background-color: #16181f;
+    @include dark-mode;
+  }
+}
+
+/* Explicit dark mode */
+html[data-theme="dark"] {
+  background-color: #16181f;
+  @include dark-mode;
+}
